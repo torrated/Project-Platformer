@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Geronimo",
-    "path": "folders/Sprites/Geronimo.yy",
+    "path": "folders/Sprites/Players/Geronimo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

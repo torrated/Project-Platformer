@@ -3,10 +3,10 @@
   "resourceVersion": "1.0",
   "name": "spr_geronimo_quieto_espada",
   "bbox_bottom": 31,
-  "bbox_left": 6,
-  "bbox_right": 26,
-  "bbox_top": 6,
-  "bboxMode": 0,
+  "bbox_left": 10,
+  "bbox_right": 22,
+  "bbox_top": 10,
+  "bboxMode": 2,
   "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Geronimo",
-    "path": "folders/Sprites/Geronimo.yy",
+    "path": "folders/Sprites/Players/Geronimo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
