@@ -6,10 +6,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objects/Objetos.yy",
+    "name": "armas",
+    "path": "folders/Objects/Objetos/armas.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_arma_parent",
+    "path": "objects/obj_arma_parent/obj_arma_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

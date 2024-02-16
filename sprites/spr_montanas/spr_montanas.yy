@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_montanas",
-  "bbox_bottom": 383,
+  "bbox_bottom": 504,
   "bbox_left": 0,
-  "bbox_right": 383,
+  "bbox_right": 639,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e262bbfc-ae48-4368-9a88-7bc4d8f9fe01",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0589ce99-a0dc-4995-825f-5e0b0b53b94f",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 384,
+  "height": 505,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d6b0492c-fcd5-4b49-9083-b6c7b18ce63d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1a37be5f-429e-40c3-aeb0-b0bd29a83633","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e262bbfc-ae48-4368-9a88-7bc4d8f9fe01","path":"sprites/spr_montanas/spr_montanas.yy",},},},"Disabled":false,"id":"ed57310e-f2d4-4344-8235-e38a264a5f77","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0589ce99-a0dc-4995-825f-5e0b0b53b94f","path":"sprites/spr_montanas/spr_montanas.yy",},},},"Disabled":false,"id":"e72b1c9c-bb07-4a54-af54-7f564045f7bc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 384,
+  "width": 640,
 }

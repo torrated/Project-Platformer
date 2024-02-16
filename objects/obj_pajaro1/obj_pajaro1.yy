@@ -6,7 +6,10 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemigos_parent","path":"objects/obj_enemigos_parent/obj_enemigos_parent.yy",},"propertyId":{"name":"var_velocidad","path":"objects/obj_enemigos_parent/obj_enemigos_parent.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemigos_parent","path":"objects/obj_enemigos_parent/obj_enemigos_parent.yy",},"propertyId":{"name":"var_salud","path":"objects/obj_enemigos_parent/obj_enemigos_parent.yy",},"value":"3",},
+  ],
   "parent": {
     "name": "Enemigos",
     "path": "folders/Objects/Enemigos.yy",

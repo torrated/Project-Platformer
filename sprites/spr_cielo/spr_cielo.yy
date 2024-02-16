@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_cielo",
-  "bbox_bottom": 31,
+  "bbox_bottom": 383,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 255,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3260ea0-ee6c-4304-b43b-d0f4544fa074",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2fcba2d2-73a8-45c6-aabf-96eb2d5495d8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 384,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cef044c4-050b-47cb-b58e-bbca20c3c4d7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7b7c8ed6-42ac-4fb0-a0a2-4bcccb4bd8ec","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3260ea0-ee6c-4304-b43b-d0f4544fa074","path":"sprites/spr_cielo/spr_cielo.yy",},},},"Disabled":false,"id":"50eaa570-235e-4e03-ac7c-cb0a2b87139c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2fcba2d2-73a8-45c6-aabf-96eb2d5495d8","path":"sprites/spr_cielo/spr_cielo.yy",},},},"Disabled":false,"id":"0e123dfa-90f5-40c1-a9ee-1c8471bd3c1c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 32,
+  "width": 256,
 }
