@@ -34,9 +34,9 @@ function PlayerState_Golpeado()
 	
 
 	// colision vertical
-	if (place_meeting(x,y+var_velocidad_vertical,layer_tilemap_get_id("Tileset2")))
+	if (place_meeting(x,y+var_velocidad_vertical,layer_tilemap_get_id(obj_juego.tileset)))
 	{																							if is_debug_overlay_open() show_debug_message("Golpeado y colision vertical");
-		while (!place_meeting(x,y+sign(var_velocidad_vertical),layer_tilemap_get_id("Tileset2")))
+		while (!place_meeting(x,y+sign(var_velocidad_vertical),layer_tilemap_get_id(obj_juego.tileset)))
 		{
 			y += sign(var_velocidad_vertical);
 		}

@@ -6,7 +6,7 @@ var_key_right = false;
 var_key_jump = false;
 var_key_attack = false;
 var_key_run = false;
-var_en_el_suelo = place_meeting(x,y+1,layer_tilemap_get_id("Tileset2"));
+var_en_el_suelo = place_meeting(x,y+1,layer_tilemap_get_id(obj_juego.tileset));
 
 
 

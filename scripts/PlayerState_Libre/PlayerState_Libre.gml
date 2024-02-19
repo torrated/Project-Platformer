@@ -27,9 +27,9 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 }
 
 	// colision horizontal
-	if (place_meeting(x+var_velocidad_horizontal,y,layer_tilemap_get_id("Tileset2"))) // si hay una colision a donde DEBERIA moverse..
+	if (place_meeting(x+var_velocidad_horizontal,y,layer_tilemap_get_id(obj_juego.tileset))) // si hay una colision a donde DEBERIA moverse..
 	{																							if is_debug_overlay_open() show_debug_message("Colision horizontal");
-		while (!place_meeting(x+sign(var_velocidad_horizontal),y,layer_tilemap_get_id("Tileset2")))
+		while (!place_meeting(x+sign(var_velocidad_horizontal),y,layer_tilemap_get_id(obj_juego.tileset)))
 		{
 			x += sign(var_velocidad_horizontal); // ...nos acercamos pixel por pixel
 		}
@@ -40,9 +40,9 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 
 
 	// colision vertical
-	if (place_meeting(x,y+var_velocidad_vertical,layer_tilemap_get_id("Tileset2")))
+	if (place_meeting(x,y+var_velocidad_vertical,layer_tilemap_get_id(obj_juego.tileset)))
 	{																							if is_debug_overlay_open() show_debug_message("Colision vertical");
-		while (!place_meeting(x,y+sign(var_velocidad_vertical),layer_tilemap_get_id("Tileset2")))
+		while (!place_meeting(x,y+sign(var_velocidad_vertical),layer_tilemap_get_id(obj_juego.tileset)))
 		{
 			y += sign(var_velocidad_vertical);
 		}

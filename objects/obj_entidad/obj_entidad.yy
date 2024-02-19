@@ -1,17 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_muro",
+  "name": "obj_entidad",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Enemigos",
+    "path": "folders/Objects/Enemigos.yy",
   },
   "parentObjectId": {
-    "name": "obj_muro_parent",
-    "path": "objects/obj_muro_parent/obj_muro_parent.yy",
+    "name": "obj_entidad_parent",
+    "path": "objects/obj_entidad_parent/obj_entidad_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_muro",
-    "path": "sprites/spr_muro/spr_muro.yy",
+    "name": "Sprite23",
+    "path": "sprites/Sprite23/Sprite23.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
