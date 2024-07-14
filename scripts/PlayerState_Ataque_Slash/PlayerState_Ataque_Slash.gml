@@ -25,28 +25,13 @@ function PlayerState_Ataque_Slash()
 			if (ds_list_find_index(hit_by_attack,_hitID) == -1) //no esta en la lista
 			{
 				ds_list_add(hit_by_attack,_hitID);
-				with (_hitID)
-				{															if is_debug_overlay_open() show_debug_message("Hit");
-					audio_play_sound(snd_golpe,1,false);
-					_hitID.var_flash = 5; // numero de frames que el enemigo se pinta blanco
-					_hitID.var_salud -= 1; 
-					_hitID.var_gravedad_horizontal = obj_player.image_xscale * 4; //knockback hacia la dirección en que miramos
-																			if is_debug_overlay_open() show_debug_message(string_concat("Gravedad horizontal: ",_hitID.var_gravedad_horizontal));
-					layer_set_visible("Shake",1);
-					obj_enemigos.alarm[0] = 10;
-					if (_hitID.var_salud <= 0)
-					{														if is_debug_overlay_open() show_debug_message("Enemigo destruido");
-						instance_destroy(_hitID);
-					}
-				}
+				EnemigoState_Golpeado(_hitID);
 			}
 		}
 	}
 	
-	
 	ds_list_destroy(_hitByAttackNow);
 	mask_index = var_sprite_quieto;
-	
 	
 	if (animation_end()) //si se acaba la animacion entonces volvemos al estado libre
 	{																		if is_debug_overlay_open() show_debug_message("Fin de la animación de ataque");

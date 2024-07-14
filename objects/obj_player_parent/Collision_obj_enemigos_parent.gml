@@ -1,3 +1,6 @@
 /// @description Golpeado por un enemigo
 
-state = PLAYERSTATE.GOLPEADO;
+if !(state == PLAYERSTATE.MUERTO) && !(var_golpeado)
+{
+	state = PLAYERSTATE.GOLPEADO;
+}

@@ -2,7 +2,7 @@ function PlayerState_Golpeado()
 {
 	// al ser golpeados por un enemigo, saltamos hacia atras y perdemos uno de salud y activamos el estado golpeado
 	if !(var_golpeado) // no podemos ser golpeados si estamos en estado golpeado
-	{																						if is_debug_overlay_open() show_debug_message("Golpeado");
+	{
 		var_velocidad_vertical = var_velocidad_salto/1.5; // velocidad salto es negativa, asi que sumamos
 		var_velocidad_horizontal = var_velocidad_golpeado * sign(image_xscale);
 		var_golpeado =  true;
@@ -13,6 +13,12 @@ function PlayerState_Golpeado()
 
 
 	var_velocidad_vertical += var_gravedad;
+	if (var_puede_saltar > 0) && (var_key_jump) // si puede saltar y se presiona saltar
+	{
+		var_velocidad_vertical = var_velocidad_salto;
+		audio_play_sound(snd_salto,1,false);
+		var_puede_saltar = 0;
+	}	
 		
 		
 		
@@ -43,4 +49,15 @@ function PlayerState_Golpeado()
 		var_velocidad_vertical = 0;
 	}
 	y += var_velocidad_vertical;
+	
+	
+	
+	// calcular movimiento horizontal
+	if (var_puede_leer_input)
+	{																							if is_debug_overlay_open() show_debug_message("Se puede leer el input");
+		var _var_move = var_key_right - var_key_left; // si mueve a la derecha entonces esto vale 1. Si izquierda, -1. Si nada o ambos, 0
+		if (var_key_run) var_velocidad_horizontal = _var_move * var_velocidad_correr;
+		else var_velocidad_horizontal = _var_move * var_velocidad_caminar;
+	}
+	x += var_velocidad_horizontal;
 }

@@ -1,25 +1,47 @@
 ///@description Lee el input y selecciona el estado en la state machine
 
-// inicializamos las teclas pulsadas
-var_key_left = false;
-var_key_right = false;
-var_key_jump = false;
-var_key_attack = false;
-var_key_run = false;
-var_en_el_suelo = place_meeting(x,y+1,layer_tilemap_get_id(obj_juego.tileset));
+// inicializamos un par de variables
 
+var_puede_saltar -= 1;
+keybuffer_salto -= 1;
+
+if (instance_exists(obj_juego))
+{
+	var_en_el_suelo = place_meeting(x,y+1,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible]);
+}
 
 
 // leer input del jugador
-if ((var_puede_leer_input))//&& !(var_golpeado) && (var_salud > 0))
-{													if is_debug_overlay_open() show_debug_message("Step y leemos el input");
-	 var_key_left = keyboard_check(vk_left);
-	 var_key_right = keyboard_check(vk_right);
-	 var_key_jump = keyboard_check_pressed(vk_space);
-	 var_key_attack = keyboard_check_pressed(ord("A"));
-	 var_key_run = keyboard_check(vk_shift);
+if (var_puede_leer_input)
+{
+	var_key_left = global.izquierda;
+	var_key_right = global.derecha;
+	var_key_jump = global.salto;
+	var_key_attack = global.ataque;
+	//var_key_run =  keyboard_check(vk_shift);
+	var_movimiento = global.movimiento;
 }
 
+
+if (var_en_el_suelo)
+{
+	var_puede_saltar = 10;
+	
+	if (keybuffer_salto > 0)
+	{
+		var_key_jump = 1;
+		keybuffer_salto = keybuffer_salto_init;
+	}
+}
+
+
+if !(var_en_el_suelo) && (var_key_jump)
+{
+	keybuffer_salto = keybuffer_salto_init;
+}
+
+
+// seleccionamos el estado
 switch (state)
 {
 	case PLAYERSTATE.LIBRE: PlayerState_Libre(); break;
@@ -27,4 +49,5 @@ switch (state)
 	case PLAYERSTATE.ATAQUE_COMBO: PlayerState_Ataque_Combo(); break;
 	case PLAYERSTATE.MUERTO: PlayerState_Muerto(); break;
 	case PLAYERSTATE.GOLPEADO: PlayerState_Golpeado(); break;
+	case PLAYERSTATE.QUIETO: PlayerState_Quieto(); break;
 }

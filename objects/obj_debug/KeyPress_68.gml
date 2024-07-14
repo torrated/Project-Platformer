@@ -1,6 +1,6 @@
-// inicia o desactiva el modo debug
+/// @description activa o desactiva el modo debug
 
-var_debug_mode = !var_debug_mode;
-
-if (var_debug_mode) show_debug_log(true);
-else show_debug_log(false);
+if (keyboard_check(vk_shift))
+{
+	var_debug_mode = !var_debug_mode;
+}
