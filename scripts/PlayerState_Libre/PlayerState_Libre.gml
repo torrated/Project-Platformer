@@ -41,41 +41,43 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 	x += var_velocidad_horizontal;
 
 
-
 	// colision vertical
 		// raycasting	
-		var _raycast_left =  collision_line(bbox_left,bbox_top,bbox_left,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true);
-		var _raycast_middle =  collision_line((bbox_right+bbox_left)/2,bbox_top,(bbox_right+bbox_left)/2,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true);
-		var _raycast_right =  collision_line(bbox_right,bbox_top,bbox_right,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true);
-		
-		if (_raycast_left || _raycast_middle || _raycast_right)
+		if (instance_exists(obj_juego)) && (instance_exists(obj_player_parent))
 		{
-			if (_raycast_left) && (_raycast_middle) {}; // nada
-			if (_raycast_right) && (_raycast_middle) {}; // nada
-			
-			if (_raycast_left) && !(_raycast_middle)
-			{
-				for (var _i = bbox_left; _i <= bbox_right; _i++)
-				{
-					if (collision_line(_i,bbox_top,_i,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true))
-					{
-						x += 1;
-					}
-				}
-			}
+			var _raycast_left =  collision_line(bbox_left,bbox_top,bbox_left,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true);
+			var _raycast_middle =  collision_line((bbox_right+bbox_left)/2,bbox_top,(bbox_right+bbox_left)/2,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true);
+			var _raycast_right =  collision_line(bbox_right,bbox_top,bbox_right,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true);
 
-			if (_raycast_right) && !(_raycast_middle)
+			if (_raycast_left || _raycast_middle || _raycast_right)
 			{
-				for (var _i = bbox_right; _i >= bbox_left; _i--)
+				if (_raycast_left) && (_raycast_middle) {}; // nada
+				if (_raycast_right) && (_raycast_middle) {}; // nada
+			
+				if (_raycast_left) && !(_raycast_middle)
 				{
-					if (collision_line(_i,bbox_top,_i,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true))
+					for (var _i = bbox_left; _i <= bbox_right; _i++)
 					{
-						x -= 1;
+						if (collision_line(_i,bbox_top,_i,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true))
+						{
+							x += 1;
+						}
+					}
+				}
+
+				if (_raycast_right) && !(_raycast_middle)
+				{
+					for (var _i = bbox_right; _i >= bbox_left; _i--)
+					{
+						if (collision_line(_i,bbox_top,_i,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true))
+						{
+							x -= 1;
+						}
 					}
 				}
 			}
-		}
-	
+		} // end instance exists
+		
 	if (instance_exists(obj_juego)) && ((place_meeting(x,y+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible])) || ((place_meeting(x,y+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible])) && (var_velocidad_vertical>0)))
 	{
 		while (!place_meeting(x,y+sign(var_velocidad_vertical),[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible]))
