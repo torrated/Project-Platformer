@@ -417,7 +417,7 @@
           0,-427,-2147483648,-7,0,-59,-2147483648,-28,0,-224,-2147483648,-56,0,-2,-2147483648,-10,0,-2,-2147483648,
           -10,0,-405,-2147483648,-6,0,-16,-2147483648,-7,0,-311,-2147483648,-56,0,-2,-2147483648,-10,0,-2,-2147483648,
           -10,0,-126,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet_fase1","path":"tilesets/TileSet_fase1/TileSet_fase1.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet_fase1","path":"tilesets/TileSet_fase1/TileSet_fase1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Arbustos","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":800,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Arbustos","properties":[
         {"name":"g_Intensity","type":0,"value":"0.2",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_arbustos","path":"sprites/spr_arbustos/spr_arbustos.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":192,},
