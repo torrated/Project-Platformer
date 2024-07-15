@@ -42,7 +42,7 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 
 
 	// colision vertical
-		// raycasting	
+		// raycasting hacia arriba para sortear esquinas
 		if (instance_exists(obj_juego)) && (instance_exists(obj_player_parent))
 		{
 			var _raycast_left =  collision_line(bbox_left,bbox_top,bbox_left,bbox_top+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,true);
@@ -88,6 +88,11 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 	}
 	y += var_velocidad_vertical;
 
+	//BUGFIX: al volver de la pausa el personaje está hundido 0.4 pixeles y se atasca
+		while (var_velocidad_vertical = 0) && (place_meeting(x,y,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible]))
+		{
+			y -= 1;
+		}
 
 
 	// animacion

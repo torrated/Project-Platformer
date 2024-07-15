@@ -3,7 +3,7 @@
   "%Name":"spr_version",
   "bboxMode":0,
   "bbox_bottom":21,
-  "bbox_left":1,
+  "bbox_left":0,
   "bbox_right":31,
   "bbox_top":13,
   "collisionKind":1,
@@ -19,7 +19,7 @@
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"fc6e29cb-c4b4-4d6b-9805-e87bd1c6d596","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"fc6e29cb-c4b4-4d6b-9805-e87bd1c6d596","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"07b53eee-2559-4398-93a1-52a7e00d609d","blendMode":0,"displayName":"default (2) (2)","isLocked":false,"name":"07b53eee-2559-4398-93a1-52a7e00d609d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_version",
   "nineSlice":null,

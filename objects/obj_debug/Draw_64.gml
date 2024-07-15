@@ -26,5 +26,13 @@ if (var_debug_mode)
 
 	draw_text(700,_i,"global.enter: "+string(global.enter)); _i += 10;
 	draw_text(700,_i,"global.pausa: "+string(global.pausa)); _i += 10;
+	
+	draw_text(700,_i,"global.arriba: "+string(global.arriba)); _i += 10;
+	draw_text(700,_i,"global.abajo: "+string(global.abajo)); _i += 10;
+	draw_text(700,_i,"global.derecha: "+string(global.derecha)); _i += 10;
+	draw_text(700,_i,"global.izquierda: "+string(global.izquierda)); _i += 10;
+	draw_text(700,_i,"global.salto: "+string(global.salto)); _i += 10;
+	
+	draw_text(700,_i,"obj_player_parent.y: "+string(obj_player_parent.y)); _i += 10;
 
 }
