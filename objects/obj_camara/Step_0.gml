@@ -48,7 +48,7 @@ y = clamp(y,view_h_half,room_height-view_h_half);
 if (instance_exists(obj_juego)) && !(obj_juego.scroll_inicial)
 {
 	camera_set_view_pos(camara1,x-view_w_third,y-view_h_half);
-	
+
 	var _state = time_source_get_state(obj_juego.time_per_second);
 
     if !(_state == time_source_state_active)

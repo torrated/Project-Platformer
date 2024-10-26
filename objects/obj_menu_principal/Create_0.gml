@@ -10,3 +10,5 @@ fin_de_fundido = false; //para saber cuándo ha terminado el fundido
 opciones = false; //para saber si hay que mostrar el menu opciones o no
 controles = false; //para saber si hay que mostrar el menu controles o no
 que_menu_muestro = noone;
+
+window_set_cursor(cr_none); // deshabilita el cursor del ratón

@@ -64,7 +64,7 @@ if (sube_vida)
 // Arma actual
 if (obj_player_parent.var_obj_arma == noone)
 {
-	draw_sprite_ext(spr_hud_arma,0,982,720,1,1,0,c_white,1);
+	//draw_sprite_ext(spr_hud_arma,0,982,720,1,1,0,c_white,1);
 }
 else
 {

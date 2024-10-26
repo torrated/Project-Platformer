@@ -6,8 +6,8 @@
   "name":"obj_spider_quieta",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemigos",
-    "path":"folders/Objects/Enemigos.yy",
+    "name":"Fase 1",
+    "path":"folders/Objects/Enemigos/Fase 1.yy",
   },
   "parentObjectId":{
     "name":"obj_enemigos_parent",

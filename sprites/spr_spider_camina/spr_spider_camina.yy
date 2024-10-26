@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Enemigos",
-    "path":"folders/Sprites/Enemigos.yy",
+    "name":"Fase 1",
+    "path":"folders/Sprites/Enemigos/Fase 1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

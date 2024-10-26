@@ -1,15 +1,23 @@
 {
   "$GMObject":"",
   "%Name":"obj_boss_spider",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_spider_web","path":"objects/obj_spider_web/obj_spider_web.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_boss_spider",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bosses",
-    "path":"folders/Objects/Enemigos/Bosses.yy",
+    "name":"Fase 1",
+    "path":"folders/Objects/Enemigos/Fase 1.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemigos_parent",
+    "path":"objects/obj_enemigos_parent/obj_enemigos_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spider_boss",
-    "path":"sprites/spr_spider_boss/spr_spider_boss.yy",
+    "name":"spr_spider_boss_idle",
+    "path":"sprites/spr_spider_boss_idle/spr_spider_boss_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

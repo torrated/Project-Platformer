@@ -76,7 +76,7 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 					}
 				}
 			}
-		} // end instance exists
+		} // end instance exists / end raycasting
 		
 	if (instance_exists(obj_juego)) && ((place_meeting(x,y+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible])) || ((place_meeting(x,y+var_velocidad_vertical,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible])) && (var_velocidad_vertical>0)))
 	{
@@ -85,6 +85,8 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 			y += sign(var_velocidad_vertical);
 		}
 		var_velocidad_vertical = 0;
+		//if (y-yprevious<>0)
+		//	mostrar_humo(x,y,depth);
 	}
 	y += var_velocidad_vertical;
 
@@ -99,6 +101,10 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 	if (var_velocidad_horizontal != 0)
 	{
 		image_xscale = sign(var_velocidad_horizontal);
+		if ((x % 12 == 0) && (var_en_el_suelo)) // solo ponemos polvo cada varios pixels para no sobrecargar
+		{
+			var _polvo = instance_create_depth(x-var_velocidad_horizontal,y-4,depth,obj_polvo);
+		}
 	}
 	
 	

@@ -31,3 +31,8 @@ global.texto_menuprincipal_menuopciones = [
 	["IDIOMA","LANGUAGE"],
 	["VOLVER","BACK"]
 	];
+
+global.texto_gameover = [
+	"Presiona SALTO",
+	"Press JUMP"
+	];

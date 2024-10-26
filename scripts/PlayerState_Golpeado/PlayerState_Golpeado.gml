@@ -24,15 +24,14 @@ function PlayerState_Golpeado()
 		
 	if ((var_velocidad_vertical >= 0) && (var_en_el_suelo))
 	{		
-																							if is_debug_overlay_open() show_debug_message("Golpeado y en el suelo");
 		var_puede_leer_input = true;
 	
 		if (var_salud <= 0)
-		{																					if is_debug_overlay_open() show_debug_message("Golpeado y sin vida");
+		{
 			state = PLAYERSTATE.MUERTO;
 		}
 		else
-		{																					if is_debug_overlay_open() show_debug_message("Golpeado y con vida");
+		{
 			state = PLAYERSTATE.LIBRE;
 		}
 		
@@ -41,7 +40,7 @@ function PlayerState_Golpeado()
 
 	// colision vertical
 	if (place_meeting(x,y+var_velocidad_vertical,layer_tilemap_get_id(obj_juego.tileset)))
-	{																							if is_debug_overlay_open() show_debug_message("Golpeado y colision vertical");
+	{
 		while (!place_meeting(x,y+sign(var_velocidad_vertical),layer_tilemap_get_id(obj_juego.tileset)))
 		{
 			y += sign(var_velocidad_vertical);
@@ -54,7 +53,7 @@ function PlayerState_Golpeado()
 	
 	// calcular movimiento horizontal
 	if (var_puede_leer_input)
-	{																							if is_debug_overlay_open() show_debug_message("Se puede leer el input");
+	{
 		var _var_move = var_key_right - var_key_left; // si mueve a la derecha entonces esto vale 1. Si izquierda, -1. Si nada o ambos, 0
 		if (var_key_run) var_velocidad_horizontal = _var_move * var_velocidad_correr;
 		else var_velocidad_horizontal = _var_move * var_velocidad_caminar;

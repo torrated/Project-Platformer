@@ -14,15 +14,17 @@ Secuencia:
  10.- el boss puede moverse
 */
 
-function llegada_a_boss()
+function llegada_a_boss(boss = obj_enemigos_parent)
 {
-	//if (view_get_visible(0)) // si el viewport 0 es visible, iniciamos la secuencia
 	if !(global.secuencia_iniciada)
 	{
 		global.secuencia_iniciada = true;
 		
 		// 1.- el personaje se detiene
-		obj_player_parent.state = PLAYERSTATE.QUIETO;
+		if (instance_exists(obj_player_parent))
+		{
+			obj_player_parent.state = PLAYERSTATE.QUIETO;
+		}
 	
 		
 		// variables para el fundido a negro
@@ -56,10 +58,22 @@ function llegada_a_boss()
 		fin_de_desfundido = false;
 		
 		// variable para alejar la camara si hace falta
-		obj_camara.alejar = true;
+		if (instance_exists(obj_camara))
+		{
+			obj_camara.alejar = true;
+		}
 		
+		// para la musica e inicia una nueva
+		if (instance_exists(obj_juego))
+		{
+			if (audio_is_playing(obj_juego.musica))
+			{
+				audio_stop_sound(obj_juego.musica);
+				obj_juego.musica = audio_play_sound(Web_of_Shadows,1,true);
+			}
+		}
 	}
-	else // si el viewport visible es 1 es que la secuencia ya está iniciada
+	else // si secuencia ya está iniciada
 	{
 		if !(fin_de_fundido) // para dibujar la animacion de fundido
 		{
@@ -161,16 +175,21 @@ function llegada_a_boss()
 							
 
 							// 9.- el personaje puede moverse
-							obj_player_parent.state = PLAYERSTATE.LIBRE;
-							obj_player_parent.var_puede_leer_input = true;
-							
+							if (instance_exists(obj_player_parent))
+							{
+								obj_player_parent.state = PLAYERSTATE.LIBRE;
+								obj_player_parent.var_puede_leer_input = true;
+							}
 							
 							// 10.- el boss puede moverse
-							
+							boss.estado_iniciado = -1;
 							
 	
 							// .- fin del script
-							obj_trigger_muro_invisible.ejecuta_secuencia = false;
+							if (instance_exists(obj_trigger_muro_invisible))
+							{
+								obj_trigger_muro_invisible.ejecuta_secuencia = false;
+							}
 							global.secuencia_iniciada = false;
 						}
 					}

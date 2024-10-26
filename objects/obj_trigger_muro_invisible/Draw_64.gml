@@ -2,5 +2,5 @@
 
 if (ejecuta_secuencia)
 {
-	llegada_a_boss();
+	llegada_a_boss(obj_boss_spider);
 }
