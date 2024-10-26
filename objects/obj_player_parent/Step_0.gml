@@ -18,7 +18,6 @@ if (var_puede_leer_input)
 	var_key_right = global.derecha;
 	var_key_jump = global.salto;
 	var_key_attack = global.ataque;
-	//var_key_run =  keyboard_check(vk_shift);
 	var_movimiento = global.movimiento;
 }
 

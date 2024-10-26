@@ -27,6 +27,5 @@ else
 	global.pausa = keyboard_check_pressed(vk_escape);
 
 	global.movimiento = global.derecha - global.izquierda;
-	global.ataque = noone;//keyboard_check_pressed(vk_control);
-	//	var_key_run = keyboard_check(vk_shift);
+	global.ataque = noone;
 }

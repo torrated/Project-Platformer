@@ -3,25 +3,28 @@
 if (global.pausa)
 {/// @description (des)activa la pausa
 
-	pausa = !pausa;
-	
-	if (pausa)
-	{
-		time_source_pause(obj_juego.time_per_second);
-		if (audio_is_playing(obj_juego.musica))
+	if ((instance_exists(obj_fundido)) && !(obj_fundido.secuencia_iniciada)) //secuencia iniciada signica que el personaje murió
 		{
-			audio_pause_sound(obj_juego.musica);
-		}
+		pausa = !pausa;
+	
+		if (pausa)
+		{
+			time_source_pause(obj_juego.time_per_second);
+			if (audio_is_playing(obj_juego.musica))
+			{
+				audio_pause_sound(obj_juego.musica);
+			}
 		
-		var _obj_settings_id = obj_settings.id;
-		instance_deactivate_all(true);
-		instance_activate_object(_obj_settings_id);
-	}
-	else
-	{
-		instance_activate_all();
-		audio_resume_sound(obj_juego.musica);
-	}
+			var _obj_settings_id = obj_settings.id;
+			instance_deactivate_all(true);
+			instance_activate_object(_obj_settings_id);
+		}
+		else
+		{
+			instance_activate_all();
+			audio_resume_sound(obj_juego.musica);
+		}
+		}
 }
 
 

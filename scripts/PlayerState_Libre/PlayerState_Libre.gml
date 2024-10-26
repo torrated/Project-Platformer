@@ -85,8 +85,6 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 			y += sign(var_velocidad_vertical);
 		}
 		var_velocidad_vertical = 0;
-		//if (y-yprevious<>0)
-		//	mostrar_humo(x,y,depth);
 	}
 	y += var_velocidad_vertical;
 
