@@ -5,6 +5,10 @@ else que_menu_muestro = global.texto_menupausa_opciones;
 
 if (pausa)
 {
+	var _font = draw_get_font();
+	var _color = draw_get_color();
+	var _halign = draw_get_halign();
+	var _valign = draw_get_valign();
 	
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_bottom);
@@ -23,6 +27,10 @@ if (pausa)
 		_i++;
 	}
 	
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_top);
+	//draw_set_halign(fa_left);
+	//draw_set_valign(fa_top);
+	draw_set_font(_font);
+	draw_set_color(_color);
+	draw_set_halign(_halign);
+	draw_set_valign(_valign);
 }

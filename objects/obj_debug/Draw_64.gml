@@ -12,6 +12,8 @@ if (var_debug_mode)
 		case 4: _estado = "GOLPEADO"; break;
 		case 5: _estado = "QUIETO"; break;
 	}
+	var _font = draw_get_font();
+	var _color = draw_get_color();
 	draw_set_font(fnt_debug);
 	draw_set_color(c_white);
 	var _i := 85;
@@ -30,4 +32,6 @@ if (var_debug_mode)
 	
 	draw_text(700,_i,"obj_vidas.vidas: "+string(obj_vidas.vidas)); _i += _height;
 
+	draw_set_font(_font);
+	draw_set_color(_color);
 }

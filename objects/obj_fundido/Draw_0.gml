@@ -30,7 +30,7 @@ if (instance_exists(obj_vidas))
 			{
 				if (var_pausa > 0)
 					var_pausa -= 1;
-				//get current values
+				// guardamos los valores actuales
 				var _font = draw_get_font();
 				var _color = draw_get_color();
 				
@@ -48,7 +48,7 @@ if (instance_exists(obj_vidas))
 						instance_destroy(self,true);
 					}		
 				}
-				//resets previous values
+				// volvemos a poner los valores como estaban
 				draw_set_font(_font);
 				draw_set_colour(_color);
 			}
