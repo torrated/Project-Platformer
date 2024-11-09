@@ -41,7 +41,7 @@ if (instance_exists(obj_vidas))
 				
 				if (var_pausa <= 0)
 				{
-					draw_text_transformed(x+24, y+8, global.texto_gameover[global.idioma], 0.25, 0.25, 0);
+					draw_text_transformed(x+24, y+8, global.texto_press_jump[global.idioma], 0.25, 0.25, 0);
 					if (global.salto)
 					{
 						secuencia_iniciada = false;

@@ -32,7 +32,12 @@ global.texto_menuprincipal_menuopciones = [
 	["VOLVER","BACK"]
 	];
 
-global.texto_gameover = [
+global.texto_press_jump = [
 	"Presiona SALTO",
 	"Press JUMP"
+	];
+	
+global.texto_level_complete = [
+	"Nivel Completo",
+	"Level Complete"
 	];
