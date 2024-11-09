@@ -10,8 +10,8 @@
   "name":"obj_polvo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Otros objetos",
+    "path":"folders/Objects/Otros objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

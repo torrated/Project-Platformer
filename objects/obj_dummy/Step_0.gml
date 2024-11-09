@@ -8,7 +8,7 @@ if (tiempo_accion <= 0)
 	switch (eleccion)
 	{
 		case "saltar":
-			sprite_index = spr_geronimo_saltando;
+			sprite_index = var_sprite_saltando;
 			var_velocidad_vertical = var_velocidad_salto;
 			salta = true;
 			break;
@@ -28,6 +28,6 @@ if (y > yInicial)
 	y = yInicial;
 	salta = false;
 	var_velocidad_vertical = 0;
-	sprite_index = spr_geronimo_corriendo;
+	sprite_index = var_sprite_corriendo;
 }
 y += var_velocidad_vertical;

@@ -10,3 +10,4 @@ max_tiempo_accion = 3 * 60; // 5 segundos
 tiempo_accion = max_tiempo_accion;
 
 eleccion = noone;
+

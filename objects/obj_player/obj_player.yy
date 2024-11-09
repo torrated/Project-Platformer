@@ -11,8 +11,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"propertyId":{"name":"var_sprite_muere","path":"objects/obj_player_parent/obj_player_parent.yy",},"resource":{"name":"spr_geronimo_muere","path":"sprites/spr_geronimo_muere/spr_geronimo_muere.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_geronimo_muere",},
   ],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Players",
+    "path":"folders/Objects/Players.yy",
   },
   "parentObjectId":{
     "name":"obj_player_parent",
