@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_geronimo_corriendo",
-    "path":"sprites/spr_geronimo_corriendo/spr_geronimo_corriendo.yy",
+    "name":"spr_pelotilla_correr",
+    "path":"sprites/spr_pelotilla_correr/spr_pelotilla_correr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

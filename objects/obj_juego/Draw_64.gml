@@ -50,7 +50,7 @@ draw_set_color(_color);
 
 
 // Vidas
-draw_sprite_ext(spr_hud_cabeza,0,82+20*(obj_vidas.vidas div 10),713,1.5,1.5,0,c_white,1);
+draw_sprite_ext(spr_hud_cabeza,0,82+20*(obj_vidas.vidas div 10),720,3.5,3.5,0,c_white,1);
 _font = draw_get_font();
 _color = draw_get_color();
 draw_set_font(fnt_vidas);
@@ -63,7 +63,7 @@ if (sube_vida)
 {
 	if (efecto_vida_i > 0)
 	{
-		draw_sprite_ext(spr_hud_cabeza,0,82+20*(obj_vidas.vidas div 10),713,1.5+3*(efecto_vida_i/efecto_vida),1.5+3*(efecto_vida_i/efecto_vida),0,c_white,1);
+		draw_sprite_ext(spr_hud_cabeza,0,82+20*(obj_vidas.vidas div 10),720,3.5+3*(efecto_vida_i/efecto_vida),3.5+3*(efecto_vida_i/efecto_vida),0,c_white,1);
 		efecto_vida_i -= 1;
 	}
 	else

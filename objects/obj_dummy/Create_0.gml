@@ -11,3 +11,5 @@ tiempo_accion = max_tiempo_accion;
 
 eleccion = noone;
 
+var_sprite_corriendo = spr_pelotilla_correr;
+var_sprite_saltando = spr_pelotilla_salto;

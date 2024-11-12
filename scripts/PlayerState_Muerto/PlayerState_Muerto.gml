@@ -1,6 +1,9 @@
 function PlayerState_Muerto()
 {
 	var_puede_leer_input = false;
+	if (obj_player_parent.image_speed != 1)
+		obj_player_parent.image_speed := 0;
+	
 	if (object_exists(obj_juego))
 		time_source_pause(obj_juego.time_per_second); //detiene el reloj
 	if (obj_player_parent.yprevious <= obj_player_parent.y) // esto significa que está en el suelo y en frame anterior ya no caia

@@ -21,7 +21,7 @@ if (var_texto_num >= 2) //monedas
 }
 if (var_texto_num >= 3) //vidas
 {
-	draw_sprite_ext(spr_hud_cabeza,0,410,575,1.5,1.5,0,c_white,1);
+	draw_sprite_ext(spr_hud_cabeza,0,410,580,4,4,0,c_white,1);
 	draw_text(450,560,string(obj_vidas.vidas));
 }
 if (var_texto_num >= 4) // presione salto

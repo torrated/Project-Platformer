@@ -113,6 +113,9 @@ if (!var_en_el_suelo && var_key_attack && sprite_index == var_sprite_saltando &&
 		if (sprite_index != var_sprite_saltando_ataque)
 		{
 			sprite_index = var_sprite_saltando;
+			image_speed = 0;
+			image_index = var_salto_airborne;
+
 		}	
 		else
 		{
