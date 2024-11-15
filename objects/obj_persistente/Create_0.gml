@@ -2,3 +2,4 @@
 
 var_timer = 0;
 var_monedas = 0;
+var_vidas = 0;

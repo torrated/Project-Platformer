@@ -7,3 +7,4 @@ var_texto_num = 0; // para saber cuándo mostrar el siguiente texto
 
 var_timer = 0;
 var_monedas = 0;
+var_vidas = 0;

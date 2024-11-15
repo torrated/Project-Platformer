@@ -3,6 +3,7 @@ function PlayerState_Libre()
 	// calcular movimiento horizontal
 	if (var_puede_leer_input)
 	{
+		image_speed = 1;
 		var _var_move = var_movimiento;
 		if (var_key_run)
 			var_velocidad_horizontal = _var_move * var_velocidad_correr;
