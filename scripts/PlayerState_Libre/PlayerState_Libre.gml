@@ -17,7 +17,7 @@ function PlayerState_Libre()
 	if (var_puede_saltar > 0) && (var_key_jump) // si puede saltar y se presiona saltar
 	{
 		var_velocidad_vertical = var_velocidad_salto;
-		audio_play_sound(snd_salto,1,false);
+		audio_play_sound(snd_salto,1,false,global.volumen_audio/10);
 		var_puede_saltar = 0;
 	}
 

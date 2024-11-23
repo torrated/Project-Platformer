@@ -9,7 +9,7 @@ function BossState_Movimiento()
 		x_inicial = x;
 		x_final = camera_get_view_x(view_camera[1])+(sprite_width/2)+(obj_player_parent.bbox_right-obj_player_parent.bbox_left)+5;
 		x_final = camera_get_view_x(view_camera[1]); // TESTING
-		audio_play_sound(snd_spider_movimiento,1,false);
+		audio_play_sound(snd_spider_movimiento,1,false,global.volumen_audio/10);
 	}
 	else
 	{ 

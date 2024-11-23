@@ -19,7 +19,7 @@ function BossState_Ataque_2(_boss  = obj_enemigos_parent)
 			if ((floor(_boss.image_index) == 6) && (_boss.sprite_index == _boss.sprite_ataque_2))
 			{
 				spider_web = instance_create_layer(x,y-20,"Enemigos",obj_spider_web);
-				audio_play_sound(snd_shoot,1,false);
+				audio_play_sound(snd_shoot,1,false,global.volumen_audio/10);
 
 				spider_web.velocidad = -3;
 			

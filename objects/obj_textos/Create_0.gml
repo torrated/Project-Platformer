@@ -22,13 +22,27 @@ global.texto_press_space = [
 	"Press JUMP to cancel..."
 	];
 
-global.texto_menuidioma_opciones = [
+global.texto_menuidiomaaudio_opciones = [
 	["Idioma","Language"],
+	["Audio","Audio"],
+	["Volver","Back"],
+	];
+
+global.texto_menuaudio_opciones = [
+	["Música","Music"],
+	["Sonidos","SFX"],
 	["Volver","Back"],
 	];
 
 global.texto_menuprincipal_menuopciones = [
 	["IDIOMA","LANGUAGE"],
+	["AUDIO","AUDIO"],
+	["VOLVER","BACK"]
+	];
+	
+global.texto_menuprincipal_menuaudio = [
+	["MUSICA","MUSIC"],
+	["SONIDOS","SOUNDS"],
 	["VOLVER","BACK"]
 	];
 

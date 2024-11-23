@@ -1,7 +1,9 @@
 /// @description Menu principal
 
 if (opciones) que_menu_muestro = global.texto_menuprincipal_menuopciones;
-else que_menu_muestro = global.texto_menuprincipal_opciones;
+else 
+	if (audio) que_menu_muestro = global.texto_menuprincipal_menuaudio;
+	else que_menu_muestro = global.texto_menuprincipal_opciones;
 
 var _font = draw_get_font();
 var _color = draw_get_color();
@@ -15,11 +17,19 @@ repeat (array_length(que_menu_muestro))
 {
 	if (_i == menuprincipal_seleccion) draw_set_color(c_white);
 	else draw_set_color(c_black);
-	draw_text(650,380+(55*_i),que_menu_muestro[_i][global.idioma]);
+	if (audio)
+		switch (_i)
+		{
+			case 0: draw_text(650,380+(55*_i),que_menu_muestro[_i][global.idioma]+" "+string(global.volumen_musica)); break;
+		    case 1: draw_text(650,380+(55*_i),que_menu_muestro[_i][global.idioma]+" "+string(global.volumen_audio)); break;
+		    default: draw_text(650,380+(55*_i),que_menu_muestro[_i][global.idioma]); break;
+		}
+	else
+		draw_text(650,380+(55*_i),que_menu_muestro[_i][global.idioma]);
 	_i++;
 }
 
-if (eleccion)
+if (eleccion) // para el fundido de comienzo de partida
 {
 	if (i_fundido >= display_get_gui_height()/2)
 	{

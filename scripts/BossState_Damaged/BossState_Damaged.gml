@@ -6,7 +6,7 @@ function BossState_Damaged(_boss = obj_enemigos_parent)
 		contador_timer = 60; // 1.5 segundos
 
 		if (_boss.vidas) > 0
-			audio_play_sound(snd_hit,1,false);
+			audio_play_sound(snd_hit,1,false,global.volumen_audio/10);
 		
 	}
 	else
