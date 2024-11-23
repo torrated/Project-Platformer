@@ -35,7 +35,7 @@ if (pausa) && (global.enter)
 			{
 				case 0: instance_activate_all(); audio_resume_sound(global.musica); pausa = false; break;
 				case 1: idioma = true; volumen = false; break;
-				case 2: room = room_first; break;
+				case 2: room = MenuPrincipal; break;
 			}
 		}
 		else //idioma
@@ -45,8 +45,8 @@ if (pausa) && (global.enter)
 				switch (menupausa_seleccion)
 				{
 					case 0: if (global.idioma == 1) global.idioma = 0; else global.idioma = 1; break;
-					case 1: volumen = true; idioma = false; break;
-					case 2: volumen = false; idioma = false; break;
+					case 1: volumen = true; idioma = false; menupausa_seleccion = 0; break;
+					case 2: volumen = false; idioma = false; menupausa_seleccion = 0; break;
 				}
 			} //audio
 			else if ((volumen) && (menupausa_seleccion == 2))
