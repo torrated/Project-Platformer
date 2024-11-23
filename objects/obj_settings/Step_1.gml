@@ -20,7 +20,9 @@ else
 	global.arriba = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 	global.abajo = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
 	global.izquierda = keyboard_check(vk_left) || keyboard_check(ord("A"));
+	global.izquierda_pressed = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")); //para pulsaciones no continuas, como el volumen
 	global.derecha = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	global.derecha_pressed = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")); //para pulsaciones no continuas, como el volumen
 	
 	global.enter = keyboard_check_pressed(vk_enter);
 	global.salto = keyboard_check_pressed(vk_space);

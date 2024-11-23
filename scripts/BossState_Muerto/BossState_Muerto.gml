@@ -4,11 +4,11 @@ function BossState_Muerto(_boss = obj_boss_spider)
 	{
 		estado_iniciado = BOSSSTATE.MUERTO;
 		_boss.image_index = 1;
-		if (audio_is_playing(obj_juego.musica))
+		if (audio_is_playing(global.musica))
 		{
-			audio_stop_sound(obj_juego.musica);
+			audio_stop_sound(global.musica);
 		}
-		audio_play_sound(snd_derrota_jefe,1,false);
+		audio_play_sound(snd_derrota_jefe,1,false,global.volumen_audio/10);
 	}
 	else
 	{ 

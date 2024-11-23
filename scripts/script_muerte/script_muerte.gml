@@ -13,9 +13,9 @@ function script_muerte(_accion)
 		fin_de_fundido = false; // para saber cuándo termina el fundido
 	
 		
-		// para la musica e inicia una nueva
-		if (audio_is_playing(obj_juego.musica))
-			audio_stop_sound(obj_juego.musica);
+		// para la musica
+		if (audio_is_playing(global.musica))
+			audio_stop_sound(global.musica);
 	}
 	else 
 	{

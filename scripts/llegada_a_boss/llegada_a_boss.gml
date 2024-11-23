@@ -66,10 +66,10 @@ function llegada_a_boss(boss = obj_enemigos_parent)
 		// para la musica e inicia una nueva
 		if (instance_exists(obj_juego))
 		{
-			if (audio_is_playing(obj_juego.musica))
+			if (audio_is_playing(global.musica))
 			{
-				audio_stop_sound(obj_juego.musica);
-				obj_juego.musica = audio_play_sound(Web_of_Shadows,1,true);
+				audio_stop_sound(global.musica);
+				global.musica = audio_play_sound(Web_of_Shadows,1,true,global.volumen_musica/10);
 			}
 		}
 	}

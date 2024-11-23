@@ -109,6 +109,7 @@
     {"id":{"name":"EnemigoState_EnUnBorde","path":"scripts/EnemigoState_EnUnBorde/EnemigoState_EnUnBorde.yy",},},
     {"id":{"name":"EnemigoState_Movimiento","path":"scripts/EnemigoState_Movimiento/EnemigoState_Movimiento.yy",},},
     {"id":{"name":"EnemigoState_Quieto","path":"scripts/EnemigoState_Quieto/EnemigoState_Quieto.yy",},},
+    {"id":{"name":"fnc_reinicia_musica","path":"scripts/fnc_reinicia_musica/fnc_reinicia_musica.yy",},},
     {"id":{"name":"GhostState_Grabar","path":"scripts/GhostState_Grabar/GhostState_Grabar.yy",},},
     {"id":{"name":"GhostState_GuardarFichero","path":"scripts/GhostState_GuardarFichero/GhostState_GuardarFichero.yy",},},
     {"id":{"name":"GhostState_LeerFichero","path":"scripts/GhostState_LeerFichero/GhostState_LeerFichero.yy",},},

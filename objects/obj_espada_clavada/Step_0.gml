@@ -9,6 +9,6 @@ if (place_meeting(x,y,obj_player))
 	obj_player.var_sprite_ataqueHB = asset_get_index(string_concat(sprite_get_name(obj_player.var_sprite_ataque),"HB")); //hitbox
 	obj_player.var_sprite_saltando_ataque = asset_get_index(string_concat(sprite_get_name(obj_player.var_sprite_saltando),"_ataque"));
 
-	audio_play_sound(snd_pickup,1,false);
+	audio_play_sound(snd_pickup,1,false,global.volumen_audio/10);
 	instance_destroy(obj_espada_clavada); 
 }
