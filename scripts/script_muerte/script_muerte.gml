@@ -15,7 +15,10 @@ function script_muerte(_accion)
 		
 		// para la musica
 		if (audio_is_playing(global.musica))
+		{
 			audio_stop_sound(global.musica);
+			fnc_reinicia_musica();
+		}
 	}
 	else 
 	{
