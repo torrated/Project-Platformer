@@ -10,6 +10,11 @@ if (global.pausa)
 		if (pausa)
 		{
 			time_source_pause(obj_juego.time_per_second);
+			if (instance_exists(obj_player_parent))
+			{
+				last_state = obj_player_parent.state;
+				obj_player_parent.state = PLAYERSTATE.QUIETO;
+			}
 
 			var _obj_settings_id = obj_settings.id;
 			instance_deactivate_all(true);
@@ -18,6 +23,10 @@ if (global.pausa)
 		else
 		{
 			instance_activate_all();
+			if (instance_exists(obj_player_parent))
+			{
+				obj_player_parent.state = last_state;
+			}
 		}
 	}
 }
