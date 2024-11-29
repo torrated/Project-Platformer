@@ -54,7 +54,7 @@ if (instance_exists(obj_juego)) && !(obj_juego.scroll_inicial)
     if !(_state == time_source_state_active)
 	{
 		obj_juego.alarm[0] = 1;
-		obj_player_parent.var_puede_leer_input = true;
+		obj_player_parent.var_puede_leer_input = !global.secuencia_iniciada;
 	}
 }
 else //scroll inicial

@@ -24,7 +24,7 @@ function PlayerState_Golpeado()
 		
 	if ((var_velocidad_vertical >= 0) && (var_en_el_suelo))
 	{		
-		var_puede_leer_input = true;
+		obj_player_parent.var_puede_leer_input = true;
 	
 		if (var_salud <= 0)
 		{
@@ -52,7 +52,7 @@ function PlayerState_Golpeado()
 	
 	
 	// calcular movimiento horizontal
-	if (var_puede_leer_input)
+	if (obj_player_parent.var_puede_leer_input)
 	{
 		var _var_move = var_key_right - var_key_left; // si mueve a la derecha entonces esto vale 1. Si izquierda, -1. Si nada o ambos, 0
 		if (var_key_run) var_velocidad_horizontal = _var_move * var_velocidad_correr;

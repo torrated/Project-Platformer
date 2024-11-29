@@ -196,5 +196,5 @@ function llegada_a_boss(boss = obj_enemigos_parent)
 				}
 			}
 		}
-	}	
+	}
 }

@@ -1,6 +1,6 @@
 function PlayerState_Muerto()
 {
-	var_puede_leer_input = false;
+	obj_player_parent.var_puede_leer_input = false;
 	if (obj_player_parent.image_speed != 1)
 		obj_player_parent.image_speed := 0;
 	

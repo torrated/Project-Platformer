@@ -14,6 +14,8 @@ if (global.pausa)
 			{
 				last_state = obj_player_parent.state;
 				obj_player_parent.state = PLAYERSTATE.QUIETO;
+				last_puede_leer_input = obj_player_parent.var_puede_leer_input;
+				obj_player_parent.var_puede_leer_input = false;
 			}
 
 			var _obj_settings_id = obj_settings.id;
@@ -26,6 +28,7 @@ if (global.pausa)
 			if (instance_exists(obj_player_parent))
 			{
 				obj_player_parent.state = last_state;
+				obj_player_parent.var_puede_leer_input = last_puede_leer_input;
 			}
 		}
 	}
@@ -42,7 +45,17 @@ if (pausa) && (global.enter)
 		{
 			switch (menupausa_seleccion)
 			{
-				case 0: instance_activate_all(); audio_resume_sound(global.musica); pausa = false; break;
+				case 0: {
+					instance_activate_all(); 
+					audio_resume_sound(global.musica); 
+					pausa = false; 
+					if (instance_exists(obj_player_parent))
+					{
+						obj_player_parent.state = PLAYERSTATE.LIBRE;
+						obj_player_parent.var_puede_leer_input = last_puede_leer_input;
+					}
+					break;
+				}
 				case 1: idioma = true; volumen = false; break;
 				case 2: room = MenuPrincipal; break;
 			}

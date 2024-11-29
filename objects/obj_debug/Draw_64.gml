@@ -4,15 +4,15 @@ if (var_debug_mode)
 {
 	var _estado = noone;
 
-	//switch (obj_player_parent.state)
-	//{
-	//	case 0: _estado = "LIBRE"; break;
-	//	case 1: _estado = "ATAQUE_SLASH"; break;
-	//	case 2: _estado = "ATAQUE_COMBO"; break;
-	//	case 3: _estado = "MUERTO"; break;
-	//	case 4: _estado = "GOLPEADO"; break;
-	//	case 5: _estado = "QUIETO"; break;
-	//}
+	switch (obj_player_parent.state)
+	{
+		case 0: _estado = "LIBRE"; break;
+		case 1: _estado = "ATAQUE_SLASH"; break;
+		case 2: _estado = "ATAQUE_COMBO"; break;
+		case 3: _estado = "MUERTO"; break;
+		case 4: _estado = "GOLPEADO"; break;
+		case 5: _estado = "QUIETO"; break;
+	}
 	var _font = draw_get_font();
 	var _color = draw_get_color();
 	draw_set_font(fnt_debug);
@@ -21,7 +21,9 @@ if (var_debug_mode)
 	var _height = 15;
 	draw_text(700,_i,"DEBUG MODE"); _i += _height;
 	draw_text(700,_i,"FPS: " + string(fps)); _i += _height;
-	//draw_text(700,_i,"obj_player.state: " + _estado);  _i += _height;
+	draw_text(700,_i,"obj_player.state: " + _estado);  _i += _height;
+	draw_text(700,_i,"var_puede_leer_input: " + string(obj_player_parent.var_puede_leer_input));  _i += _height;
+	draw_text(700,_i,"last_puede_leer_input: " + string(obj_pausa.last_puede_leer_input));  _i += _height;
 	draw_text(700,_i,"instance_count: " + string(instance_count));  _i += _height;
 	
 	draw_text(700,_i,"global.gamepad: " + string(global.gamepad)); _i += _height
