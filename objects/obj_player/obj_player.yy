@@ -42,8 +42,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_geronimo_quieto",
-    "path":"sprites/spr_geronimo_quieto/spr_geronimo_quieto.yy",
+    "name":"spr_pelotilla_idle",
+    "path":"sprites/spr_pelotilla_idle/spr_pelotilla_idle.yy",
   },
   "spriteMaskId":{
     "name":"spr_geronimo_quieto",
