@@ -141,6 +141,7 @@
     {"name":"spr_spider_boss_idle","order":3,"path":"sprites/spr_spider_boss_idle/spr_spider_boss_idle.yy",},
     {"name":"spr_spider_boss_movimiento","order":4,"path":"sprites/spr_spider_boss_movimiento/spr_spider_boss_movimiento.yy",},
     {"name":"spr_spider_boss_muerto","order":5,"path":"sprites/spr_spider_boss_muerto/spr_spider_boss_muerto.yy",},
+    {"name":"spr_spider_camina_2","order":10,"path":"sprites/spr_spider_camina_2/spr_spider_camina_2.yy",},
     {"name":"spr_spider_camina","order":6,"path":"sprites/spr_spider_camina/spr_spider_camina.yy",},
     {"name":"spr_spider_quieta_2","order":9,"path":"sprites/spr_spider_quieta_2/spr_spider_quieta_2.yy",},
     {"name":"spr_spider_quieta","order":7,"path":"sprites/spr_spider_quieta/spr_spider_quieta.yy",},

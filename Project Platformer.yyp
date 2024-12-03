@@ -182,6 +182,7 @@
     {"id":{"name":"spr_spider_boss_idle","path":"sprites/spr_spider_boss_idle/spr_spider_boss_idle.yy",},},
     {"id":{"name":"spr_spider_boss_movimiento","path":"sprites/spr_spider_boss_movimiento/spr_spider_boss_movimiento.yy",},},
     {"id":{"name":"spr_spider_boss_muerto","path":"sprites/spr_spider_boss_muerto/spr_spider_boss_muerto.yy",},},
+    {"id":{"name":"spr_spider_camina_2","path":"sprites/spr_spider_camina_2/spr_spider_camina_2.yy",},},
     {"id":{"name":"spr_spider_camina","path":"sprites/spr_spider_camina/spr_spider_camina.yy",},},
     {"id":{"name":"spr_spider_quieta_2","path":"sprites/spr_spider_quieta_2/spr_spider_quieta_2.yy",},},
     {"id":{"name":"spr_spider_quieta","path":"sprites/spr_spider_quieta/spr_spider_quieta.yy",},},
