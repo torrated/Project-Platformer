@@ -133,11 +133,15 @@ if (!obj_player_parent.var_en_el_suelo && obj_player_parent.var_key_attack && ob
 			if (var_velocidad_horizontal == 0)
 			{
 				sprite_index = var_sprite_quieto;
+				image_xscale = sign(image_xscale)/2;
+				image_yscale = sign(image_yscale)/2;
 			}
 			else
 			{
 				image_speed = 1 // animacion habilitada para correr
 				sprite_index = var_sprite_corriendo;
+				image_xscale = sign(image_xscale);
+				image_yscale = sign(image_yscale);
 			}
 		}//salud > 0
 		else //salud <= 0
