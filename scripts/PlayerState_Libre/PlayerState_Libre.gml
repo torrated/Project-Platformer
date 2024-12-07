@@ -114,6 +114,8 @@ if (!obj_player_parent.var_en_el_suelo && obj_player_parent.var_key_attack && ob
 		if (sprite_index != var_sprite_saltando_ataque)
 		{
 			sprite_index = var_sprite_saltando;
+			image_xscale = sign(image_xscale);
+			image_yscale = sign(image_yscale);
 			image_speed = 0;
 			image_index = var_salto_airborne;
 
@@ -140,8 +142,8 @@ if (!obj_player_parent.var_en_el_suelo && obj_player_parent.var_key_attack && ob
 			{
 				image_speed = 1 // animacion habilitada para correr
 				sprite_index = var_sprite_corriendo;
-				image_xscale = sign(image_xscale);
-				image_yscale = sign(image_yscale);
+				image_xscale = sign(image_xscale)/2;
+				image_yscale = sign(image_yscale)/2;
 			}
 		}//salud > 0
 		else //salud <= 0
