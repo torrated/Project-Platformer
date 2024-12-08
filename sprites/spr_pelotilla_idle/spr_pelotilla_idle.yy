@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_pelotilla_idle",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":47,
   "bbox_left":6,
   "bbox_right":39,

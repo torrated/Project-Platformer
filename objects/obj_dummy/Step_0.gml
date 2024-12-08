@@ -9,8 +9,8 @@ if (tiempo_accion <= 0)
 	{
 		case "saltar":
 			sprite_index = var_sprite_saltando;
-			image_xscale = sign(image_xscale);
-			image_yscale = sign(image_yscale);
+			image_xscale = sign(image_xscale)/2;
+			image_yscale = sign(image_yscale)/2;
 			var_velocidad_vertical = var_velocidad_salto;
 			salta = true;
 			break;
