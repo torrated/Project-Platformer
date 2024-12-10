@@ -7,5 +7,5 @@ global.pause = false;
 
 fnc_reinicia_musica();
 
-global.volumen_musica = 10;
+global.volumen_musica = 5;
 global.volumen_audio = 10;

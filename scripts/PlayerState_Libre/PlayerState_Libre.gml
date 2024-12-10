@@ -17,7 +17,7 @@ function PlayerState_Libre()
 	if (obj_player_parent.var_puede_saltar > 0) && (obj_player_parent.var_key_jump) // si puede saltar y se presiona saltar
 	{
 		obj_player_parent.var_velocidad_vertical = obj_player_parent.var_velocidad_salto;
-		audio_play_sound(snd_salto,1,false,global.volumen_audio/10);
+		audio_play_sound(snd_salto,1,false,global.volumen_audio/10,0,random_range(0.98,1.02));
 		obj_player_parent.var_puede_saltar = 0;
 	}
 
@@ -114,6 +114,8 @@ if (!obj_player_parent.var_en_el_suelo && obj_player_parent.var_key_attack && ob
 		if (sprite_index != var_sprite_saltando_ataque)
 		{
 			sprite_index = var_sprite_saltando;
+			image_xscale = sign(image_xscale)/2;
+			image_yscale = sign(image_yscale)/2;
 			image_speed = 0;
 			image_index = var_salto_airborne;
 
@@ -133,11 +135,15 @@ if (!obj_player_parent.var_en_el_suelo && obj_player_parent.var_key_attack && ob
 			if (var_velocidad_horizontal == 0)
 			{
 				sprite_index = var_sprite_quieto;
+				image_xscale = sign(image_xscale)/2;
+				image_yscale = sign(image_yscale)/2;
 			}
 			else
 			{
 				image_speed = 1 // animacion habilitada para correr
 				sprite_index = var_sprite_corriendo;
+				image_xscale = sign(image_xscale)/2;
+				image_yscale = sign(image_yscale)/2;
 			}
 		}//salud > 0
 		else //salud <= 0

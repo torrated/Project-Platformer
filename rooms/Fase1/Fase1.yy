@@ -173,7 +173,7 @@
           -7,0,-59,-2147483648,-25,23,-734,-2147483648,-7,0,-59,-2147483648,-24,3,-735,-2147483648,-7,0,-59,-2147483648,
           -23,24,-714,-2147483648,-6,0,-16,-2147483648,-7,0,-517,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet_fase1","path":"tilesets/TileSet_fase1/TileSet_fase1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRInstanceLayer":"","%Name":"Player","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"Player","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_5A8BC432","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A8BC432","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":64.0,},
         {"$GMRInstance":"v1","%Name":"inst_4CC0B7EC","colour":4278255360,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CC0B7EC","objectId":{"name":"obj_juego","path":"objects/obj_juego/obj_juego.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":32.0,},
         {"$GMRInstance":"v1","%Name":"inst_73320D46","colour":4278255615,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_73320D46","objectId":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":32.0,},
@@ -307,7 +307,7 @@
         {"$GMRInstance":"v1","%Name":"inst_16683375","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16683375","objectId":{"name":"obj_boss_spider","path":"objects/obj_boss_spider/obj_boss_spider.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6464.0,"y":320.0,},
       ],"layers":[],"name":"Enemigos","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tileset_Bosque","depth":700,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tileset_Bosque","properties":[
-        {"name":"g_Intensity","type":0,"value":"0.1",},
+        {"name":"g_Intensity","type":0,"value":"0.25",},
       ],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":825,"TileCompressedData":[
           -4852,-2147483648,-6,21,-819,-2147483648,-6,53,-825,-2147483648,-6,0,-819,-2147483648,-6,0,-825,-2147483648,
           -6,21,-474,-2147483648,-9,0,-336,-2147483648,-6,53,-455,-2147483648,-12,0,-7,-2147483648,-9,0,-315,-2147483648,
@@ -436,13 +436,13 @@
           -10,0,-126,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet_fase1","path":"tilesets/TileSet_fase1/TileSet_fase1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Arbustos","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":900,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Arbustos","properties":[
-        {"name":"g_Intensity","type":0,"value":"0.2",},
+        {"name":"g_Intensity","type":0,"value":"0.5",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_arbustos","path":"sprites/spr_arbustos/spr_arbustos.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":192,},
     {"$GMRBackgroundLayer":"","%Name":"Arboles_Cercanos","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":1000,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Arboles_Cercanos","properties":[
-        {"name":"g_Intensity","type":0,"value":"0.3",},
+        {"name":"g_Intensity","type":0,"value":"0.5",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_arboles_cercanos","path":"sprites/spr_arboles_cercanos/spr_arboles_cercanos.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":192,},
     {"$GMRBackgroundLayer":"","%Name":"Arboles_Lejanos","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":1100,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Arboles_Lejanos","properties":[
-        {"name":"g_Intensity","type":0,"value":"0.4",},
+        {"name":"g_Intensity","type":0,"value":"0.5",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_arboles_fondo","path":"sprites/spr_arboles_fondo/spr_arboles_fondo.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":192,},
     {"$GMRBackgroundLayer":"","%Name":"Montanas","animationFPS":0.0,"animationSpeedType":0,"colour":4294967295,"depth":1200,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Montanas","properties":[
         {"name":"g_Intensity","type":0,"value":"0.5",},

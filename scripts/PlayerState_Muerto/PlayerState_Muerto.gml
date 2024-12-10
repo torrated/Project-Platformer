@@ -10,6 +10,8 @@ function PlayerState_Muerto()
 	{
 		var_velocidad_horizontal = 0;
 		obj_player_parent.sprite_index = var_sprite_muere;
+		obj_player_parent.image_xscale = sign(obj_player_parent.image_xscale)/2;
+		obj_player_parent.image_yscale = sign(obj_player_parent.image_yscale)/2;
 
 		if ((obj_player_parent.image_speed == 0) && (obj_vidas.vidas > 0)) //no esta animado
 		{
