@@ -58,6 +58,7 @@
     {"name":"obj_player_parent","order":1,"path":"objects/obj_player_parent/obj_player_parent.yy",},
     {"name":"obj_polvo","order":9,"path":"objects/obj_polvo/obj_polvo.yy",},
     {"name":"obj_settings","order":1,"path":"objects/obj_settings/obj_settings.yy",},
+    {"name":"obj_sombra","order":16,"path":"objects/obj_sombra/obj_sombra.yy",},
     {"name":"obj_spider_quieta_2","order":4,"path":"objects/obj_spider_quieta_2/obj_spider_quieta_2.yy",},
     {"name":"obj_spider_quieta","order":1,"path":"objects/obj_spider_quieta/obj_spider_quieta.yy",},
     {"name":"obj_spider_web","order":3,"path":"objects/obj_spider_web/obj_spider_web.yy",},
