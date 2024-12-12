@@ -309,7 +309,7 @@
         {"$GMRInstance":"v1","%Name":"inst_16683375","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16683375","objectId":{"name":"obj_boss_spider","path":"objects/obj_boss_spider/obj_boss_spider.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6464.0,"y":320.0,},
       ],"layers":[],"name":"Enemigos","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tileset_Bosque","depth":700,"effectEnabled":true,"effectType":"_filter_greyscale","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tileset_Bosque","properties":[
-        {"name":"g_Intensity","type":0,"value":"0.25",},
+        {"name":"g_Intensity","type":0,"value":"0.4",},
       ],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":825,"TileCompressedData":[
           -4852,-2147483648,-6,21,-819,-2147483648,-6,53,-825,-2147483648,-6,0,-819,-2147483648,-6,0,-825,-2147483648,
           -6,21,-474,-2147483648,-9,0,-336,-2147483648,-6,53,-455,-2147483648,-12,0,-7,-2147483648,-9,0,-315,-2147483648,
