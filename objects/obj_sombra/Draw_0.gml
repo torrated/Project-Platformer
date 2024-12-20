@@ -18,9 +18,15 @@ if (instance_exists(obj_spider_quieta))
 	    fnc_sombra(instance_find(obj_spider_quieta,_i));
 	}
 
-if (instance_exists(obj_moneda) && 1==2)
-//show_message()
+if (instance_exists(obj_moneda) && instance_exists(obj_player_parent))
 	for (var _i = 0; _i < instance_number(obj_moneda); ++_i;)
 	{
-	    fnc_sombra(instance_find(obj_moneda,_i));
+		// sólo se dibuja la sombra si el objeto está cerca de la pantalla
+	    var _instancia = instance_find(obj_moneda,_i);
+		var _rango_x_izquierdo = obj_player_parent.x-display_get_gui_width();
+		var _rango_x_derecho = obj_player_parent.x+display_get_gui_width();
+		
+		if (_instancia.x-_instancia.sprite_width < _rango_x_derecho && 
+			_instancia.x+_instancia.sprite_width > _rango_x_izquierdo)
+			fnc_sombra(_instancia, 5);
 	}

@@ -1,4 +1,5 @@
-function fnc_sombra(_objeto = instance_find(obj_sombra,0))
+function fnc_sombra(_objeto = instance_find(obj_sombra,0),
+					_ancho = 3)
 // dibuja la sombra de la instancia pasada como argumento
 {
 	var _y = 0;
@@ -8,15 +9,15 @@ function fnc_sombra(_objeto = instance_find(obj_sombra,0))
 	
 	if (sign(_objeto.image_xscale) == 1)
 	{
-		_x1 = _objeto.x-_objeto.sprite_width/3;
+		_x1 = _objeto.x-_objeto.sprite_width/_ancho;
 		_x2 = _objeto.x;
-		_x3 = _objeto.x+_objeto.sprite_width/3;
+		_x3 = _objeto.x+_objeto.sprite_width/_ancho;
 	}
 	else
 	{
-		_x1 = _objeto.x+_objeto.sprite_width/3;
+		_x1 = _objeto.x+_objeto.sprite_width/_ancho;
 		_x2 = _objeto.x;
-		_x3 = _objeto.x-_objeto.sprite_width/3;
+		_x3 = _objeto.x-_objeto.sprite_width/_ancho;
 	}
 	
 	var _alpha = draw_get_alpha();

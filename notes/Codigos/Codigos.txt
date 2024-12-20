@@ -6,3 +6,5 @@ butler push Stilton\ Platformer\ v0.2.zip torrated/Stilton:HTML5 --userversion=0
 
 //raycasting
 collision_line() 
+
+//show_message()
