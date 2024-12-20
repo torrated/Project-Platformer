@@ -1,43 +1,26 @@
-/// @description Dibuja la sombra del player
-
-var _objeto = noone;
+/// @description Dibuja las sombras
 
 if (instance_exists(obj_player_parent))
-	_objeto = obj_player_parent;
-else if (instance_exists(obj_dummy))
-	_objeto = obj_dummy;
+	fnc_sombra(instance_find(obj_player_parent,0)); 
 	
-if (_objeto <> noone)
-{
-	var _y = 0;
-	if (sign(_objeto.image_xscale) == 1)
-	{
-		var _x1 = _objeto.x-_objeto.sprite_width/3;
-		var _x2 = _objeto.x;
-		var _x3 = _objeto.x+_objeto.sprite_width/3;
-	}
-	else
-	{
-		var _x1 = _objeto.x+_objeto.sprite_width/3;
-		var _x2 = _objeto.x;
-		var _x3 = _objeto.x-_objeto.sprite_width/3;
-	}
+if (instance_exists(obj_dummy))
+	fnc_sombra(instance_find(obj_dummy,0));
 	
-	var _alpha = draw_get_alpha();
-	draw_set_alpha(0.35);
-	
-	for (var _i = _x1; _i <= _x3; _i++)
+if (instance_exists(obj_spider_mueve))
+	for (var _i = 0; _i < instance_number(obj_spider_mueve); ++_i;)
 	{
-		_y = _objeto.y;
-		if (_objeto == obj_dummy)
-			_y = 137;
-		else
-		{
-			while !(collision_point(_i,_y,[layer_tilemap_get_id(obj_juego.tileset),obj_muro_invisible],false,false))
-				_y += 1
-		}
-		draw_line_width_color(_i,_y,_i+1,_y,0.5,c_black,c_black);
+	    fnc_sombra(instance_find(obj_spider_mueve,_i));
 	}
 
-	draw_set_alpha(_alpha);
-}
+if (instance_exists(obj_spider_quieta))
+	for (var _i = 0; _i < instance_number(obj_spider_quieta); ++_i;)
+	{
+	    fnc_sombra(instance_find(obj_spider_quieta,_i));
+	}
+
+if (instance_exists(obj_moneda) && 1==2)
+//show_message()
+	for (var _i = 0; _i < instance_number(obj_moneda); ++_i;)
+	{
+	    fnc_sombra(instance_find(obj_moneda,_i));
+	}
