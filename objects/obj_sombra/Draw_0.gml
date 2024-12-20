@@ -30,3 +30,6 @@ if (instance_exists(obj_moneda) && instance_exists(obj_player_parent))
 			_instancia.x+_instancia.sprite_width > _rango_x_izquierdo)
 			fnc_sombra(_instancia, 5);
 	}
+
+if (instance_exists(obj_boss_spider))
+	fnc_sombra(instance_find(obj_boss_spider,0),2);
