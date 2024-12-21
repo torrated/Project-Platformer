@@ -14,10 +14,10 @@ if (pausa)
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_bottom);
 
-	draw_set_font(fnt_pausa);
+	draw_set_font(fnt_menuprincipal);
 
 	draw_set_color(c_white);
-	draw_text(display_get_gui_width()/2,display_get_gui_height()/2,global.texto_pausa[global.idioma]);
+	draw_text_transformed(display_get_gui_width()/2,display_get_gui_height()/2,global.texto_pausa[global.idioma],0.5,0.5,0);
 	
 	var _i = 0;
 	repeat (array_length(que_menu_muestro))
@@ -27,12 +27,12 @@ if (pausa)
 		if (volumen)
 			switch (_i)
 			{
-				case 0: draw_text(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma]+" "+string(global.volumen_musica)); break;
-			    case 1: draw_text(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma]+" "+string(global.volumen_audio)); break;
-			    default: draw_text(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma]); break;
+				case 0: draw_text_transformed(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma]+" "+string(global.volumen_musica),0.5,0.5,0); break;
+			    case 1: draw_text_transformed(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma]+" "+string(global.volumen_audio),0.5,0.5,0); break;
+			    default: draw_text_transformed(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma],0.5,0.5,0); break;
 			}
 		else
-			draw_text(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma]);
+			draw_text_transformed(display_get_gui_width()/2,display_get_gui_height()/2+interlineado*(_i+2),que_menu_muestro[_i][global.idioma],0.5,0.5,0);
 		_i++;
 	}
 
