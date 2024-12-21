@@ -28,9 +28,10 @@ if (sube_corazon)
 draw_sprite_ext(spr_moneda,0,830,55,3,3,0,c_white,1);
 var _font = draw_get_font();
 var _color = draw_get_color();
-draw_set_font(fnt_hud);
+draw_set_font(fnt_menuprincipal);
+
 draw_set_color(c_white);
-draw_text(870,6,string(obj_juego.var_monedas)+"/100");
+draw_text_transformed(870,16,string(obj_juego.var_monedas)+"/100",0.75,0.75,0);
 
 draw_set_font(_font);
 draw_set_color(_color);
@@ -41,9 +42,10 @@ draw_set_color(_color);
 draw_sprite_ext(spr_reloj,0,430,10,2,2,0,c_white,1);
 _font = draw_get_font();
 _color = draw_get_color();
-draw_set_font(fnt_timer);
+draw_set_font(fnt_menuprincipal);
+
 draw_set_color(c_white);
-draw_text(500,12,obj_juego.timer);
+draw_text_transformed(500,12,obj_juego.timer,0.75,0.75,0);
 draw_set_font(_font);
 draw_set_color(_color);
 
@@ -53,9 +55,10 @@ draw_set_color(_color);
 draw_sprite_ext(spr_hud_cabeza,0,82+20*(obj_vidas.vidas div 10),720,3.5,3.5,0,c_white,1);
 _font = draw_get_font();
 _color = draw_get_color();
-draw_set_font(fnt_vidas);
+draw_set_font(fnt_menuprincipal);
+
 draw_set_color(c_white);
-draw_text(10,700,string_concat(obj_vidas.vidas," x"));
+draw_text_transformed(17,701,string_concat(obj_vidas.vidas,"x"),0.67,0.67,0);
 draw_set_font(_font);
 draw_set_color(_color);
 //efecto de subir una vida
@@ -96,8 +99,6 @@ var scr_go = function()
 	draw_set_valign(fa_middle);
 	draw_text_transformed_color(display_get_gui_width()/2,display_get_gui_height()/2,"Go!",go_counter_start-go_counter,go_counter_start-go_counter,0,c_red,c_white,c_yellow,c_blue,go_counter/go_counter_start);
 	
-	//draw_set_halign(fa_left);
-	//draw_set_valign(fa_top);
 	draw_set_halign(_halign);
 	draw_set_valign(_valign);
 }
