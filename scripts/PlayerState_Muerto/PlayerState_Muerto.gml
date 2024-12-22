@@ -1,6 +1,13 @@
 function PlayerState_Muerto()
 {
 	obj_player_parent.var_puede_leer_input = false;
+	
+	if (audio_is_playing(global.musica))
+		{
+			audio_stop_sound(global.musica);
+			fnc_reinicia_musica();
+		}
+		
 	if (obj_player_parent.image_speed != 1)
 		obj_player_parent.image_speed := 0;
 	
