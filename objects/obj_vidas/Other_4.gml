@@ -1,3 +1,5 @@
 /// @description 
-
-vidas = vidas_inicial;
+if (room == MenuPrincipal)
+{
+	vidas = vidas_inicial;
+}
