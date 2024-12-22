@@ -2,6 +2,8 @@
 
 function script_muerte(_accion)
 {
+	//show_message("script_muerte: obj_animaciones.animacion_iniciada="+string(obj_animaciones.animacion_iniciada));
+		
 	if !(obj_animaciones.animacion_iniciada)
 	{
 		obj_animaciones.animacion_iniciada = true;
@@ -14,6 +16,7 @@ function script_muerte(_accion)
 	
 		
 		// para la musica
+		//show_message("script_muerte: audio_is_playing(global.musica)="+string(audio_is_playing(global.musica)));
 		if (audio_is_playing(global.musica))
 		{
 			audio_stop_sound(global.musica);
