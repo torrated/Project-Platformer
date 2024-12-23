@@ -22,7 +22,10 @@ function PlayerState_Golpeado()
 		
 		
 		
-	if ((var_velocidad_vertical >= 0) && (var_en_el_suelo))
+	if (
+	    ((var_velocidad_vertical >= 0) && (var_en_el_suelo))
+	    or (obj_player_parent.y > room_height)
+	   )
 	{		
 		obj_player_parent.var_puede_leer_input = true;
 	
